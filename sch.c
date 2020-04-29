@@ -124,7 +124,7 @@ int main(){
                         clock_gettime(CLOCK_REALTIME, &end);
                         etime = syscall(352);
                         int mypid = getpid();
-                        printf("%s %d\n",pn[i],mypid);
+                        printf("%s %d\n",pn[minp],mypid);
                         syscall(351,mypid,stime,etime);
                         exit(0);
                     }
@@ -163,6 +163,7 @@ int main(){
                 clock_gettime(CLOCK_REALTIME, &end);
                 etime = syscall(352);
                 int mypid = getpid();
+                printf("%s %d\n",pn[minp],mypid);
                 syscall(351,mypid,stime,etime);
                 exit(0);
             }
