@@ -1,0 +1,1 @@
+gcc sch.c
